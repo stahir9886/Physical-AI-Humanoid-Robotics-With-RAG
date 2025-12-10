@@ -1,0 +1,21 @@
+[project]
+name = "textbook-generation-backend"
+
+[build]
+builder = "heroku/buildpacks:20"
+
+[env]
+OPENAI_API_KEY = { required = true }
+QDRANT_HOST = { required = true }
+QDRANT_PORT = { default = "6333" }
+NEON_DATABASE_URL = { required = true }
+RATE_LIMIT_REQUESTS = { default = "100" }
+RATE_LIMIT_WINDOW = { default = "3600" }
+ENVIRONMENT = { default = "production" }
+LOG_LEVEL = { default = "INFO" }
+
+[build.args]
+PYTHON_VERSION = "3.11"
+
+[http]
+port = 8000

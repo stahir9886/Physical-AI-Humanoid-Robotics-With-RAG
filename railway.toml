@@ -1,0 +1,25 @@
+# Railway Deployment Configuration
+
+# This file contains the configuration for deploying the backend to Railway
+# You can customize this configuration based on your specific requirements
+
+# Application settings
+[build]
+builder = "heroku/buildpacks:20"
+
+[build.args]
+PYTHON_VERSION = "3.11"
+
+[env]
+# Environment variables required for the application
+OPENAI_API_KEY = { required = true, description = "OpenAI API key for embeddings and completions" }
+QDRANT_HOST = { required = true, description = "Host address for Qdrant vector database" }
+QDRANT_PORT = { default = "6333", description = "Port for Qdrant vector database" }
+NEON_DATABASE_URL = { required = true, description = "Database connection string for Neon Postgres" }
+RATE_LIMIT_REQUESTS = { default = "100", description = "Number of requests allowed in the rate limit window" }
+RATE_LIMIT_WINDOW = { default = "3600", description = "Time window in seconds for rate limiting" }
+ENVIRONMENT = { default = "production", description = "Environment type (development/production)" }
+LOG_LEVEL = { default = "INFO", description = "Logging level (DEBUG/INFO/WARNING/ERROR)" }
+
+[http]
+port = 8000
