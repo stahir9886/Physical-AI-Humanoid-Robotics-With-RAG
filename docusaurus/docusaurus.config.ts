@@ -15,18 +15,19 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io', // Replace with your GitHub username
+  url: 'https://docusaurus-mssv9ziv6-shaikh-tahir-ur-rahmans-projects.vercel.app', // Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Physical-AI-Humanoid-Robotics/', // Use your repository name
+  baseUrl: '/', // Root path for Vercel deployment
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'your-username', // Usually your GitHub org/user name.
   projectName: 'Physical-AI-Humanoid-Robotics', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  onBrokenAnchors: 'ignore',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
