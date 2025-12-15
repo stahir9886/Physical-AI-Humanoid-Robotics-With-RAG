@@ -17,7 +17,6 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://docusaurus-mssv9ziv6-shaikh-tahir-ur-rahmans-projects.vercel.app', // Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/', // Root path for Vercel deployment
 
   // GitHub pages deployment config.
