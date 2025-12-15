@@ -15,9 +15,9 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io', // Replace with your GitHub Pages URL
+  url: 'https://docusaurus-96pw8ljbi-shaikh-tahir-ur-rahmans-projects.vercel.app', // Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/', // For GitHub Pages deployment
+  baseUrl: '/', // Root path for Vercel deployment
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

@@ -15,17 +15,17 @@ jobs:
         with:
           node-version: 18
           cache: npm
-          
+
       - name: Install dependencies
         run: |
           cd docusaurus
           npm ci
-          
+
       - name: Build website
         run: |
           cd docusaurus
-          npm run build
-          
+          npm run build:gh
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
